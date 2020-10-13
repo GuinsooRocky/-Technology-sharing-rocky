@@ -26,7 +26,7 @@ const Catalog: React.FC<Props> = (props) => {
   const arrLeft = [
     {
       title: 'map与set数据结构的应用',
-      context: 'dfghjkjhgfdfghjkj hgfdfg hjkhgfdf ghjkhgf ghjhgf dfghjh gfdfghj hgfdfghj',
+      context: 'dfghjkjhgfdfghjkjhgfdfghjkhgfdfghjkhgfghjhgfdfghjhgfdfghjhgfdfghj',
       href: 'nnnnn',  // 点击跳转的路由
     },
   ]
@@ -55,10 +55,10 @@ const Catalog: React.FC<Props> = (props) => {
         {
           arrLeft.map(item => {
             return (
-              <div onClick={goToDetail}>
+              <span onClick={goToDetail}>
                 <a>{item.title}</a>
-                <p>{item.context}</p>
-              </div>
+                <span>{item.context}</span>
+              </span>
             )
           })
         }

@@ -17,53 +17,19 @@
   display: flex;
   .catalog_left {
     padding: 120px;
-    width: calc(50% - 240px);
+    width: calc(50%);
     height:500px;
     background: #FAF9F5;
     float: left;
     color: rgb(51,51,51);
-
-    .left_item {
-      margin-bottom: 48px;
-    }
-
-    a {
-      font-size: 18px;
-    }
-
-    p {
-      font-size: 14px;
-    }
   }
   
   .catalog_right {
-    padding: 120px;
+    z-index: 99;
     height: 500px;
     background: #202226;
-    // margin-left: calc(50%);
+    margin-left: calc(50%);
     color: #DFDDD9;
-
-    .left_item {
-      margin-bottom: 48px;
-    }
-
-    a {
-      font-size: 18px;
-      line-height: 24px;
-    }
-
-    p {
-      width: 360px;
-      height: auto;
-      font-size: 14px;
-      line-height: 24px;
-      display: -webkit-box !important;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      work-break: break-all;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3; //指定行数
-    }
   }
 }
 
